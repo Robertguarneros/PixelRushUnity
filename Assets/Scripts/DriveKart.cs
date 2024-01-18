@@ -22,7 +22,7 @@ public class DriveKart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.DrawRay(transform.position, Vector3.down * 0.9f, Color.red);
+        Debug.DrawRay(transform.position, Vector3.down * 0.9f, Color.red);
 
         if (IsGrounded())
         {
@@ -57,12 +57,7 @@ public class DriveKart : MonoBehaviour
 
     bool IsGrounded()
     {
-        float groundCheckRadius = 0.2f;
-        LayerMask groundLayer = LayerMask.GetMask("Ground"); // Set the appropriate layer for your ground
-
-        Collider2D hitCollider = Physics2D.OverlapCircle(transform.position, groundCheckRadius, groundLayer);
-
-        return hitCollider != null;
+        // Adjust the parameters based on your character's collider and the ground
+        return Physics2D.Raycast(transform.position, Vector3.down, 0.9f);
     }
-
 }

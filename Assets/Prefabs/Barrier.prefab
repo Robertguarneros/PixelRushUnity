@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5303577212454180642}
   - component: {fileID: 4556921411755753250}
   - component: {fileID: 8658879983800288343}
+  - component: {fileID: -2312175295721797109}
   m_Layer: 0
   m_Name: Barrier
   m_TagString: Untagged
@@ -147,3 +148,16 @@ PolygonCollider2D:
       - {x: -0.42999998, y: 0.13}
       - {x: -0.47, y: 0.13}
   m_UseDelaunayMesh: 0
+--- !u!114 &-2312175295721797109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204326077974554130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89a1850a06e1fb4eb544c706a2718b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 0}
