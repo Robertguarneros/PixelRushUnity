@@ -6,8 +6,10 @@ public class DriveKart : MonoBehaviour
 {
     public float velocity;
     public float jumpingStrength;
+    public LayerMask layerGround;
     private Rigidbody2D rigidBody;
-    private CapsuleCollider2D boxCollider;
+    private BoxCollider2D boxCollider;
+    private CapsuleCollider2D capsuleCollider;
 
     private float coyoteTime = 0.2f;
     private float coyoteTimeCounter;
@@ -16,7 +18,8 @@ public class DriveKart : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        boxCollider = GetComponent<CapsuleCollider2D>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -36,10 +39,14 @@ public class DriveKart : MonoBehaviour
         ProcessMovement();
         ProcessJump();
     }
-
+    bool canJump()
+    {
+        RaycastHit2D rayCast = Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x, boxCollider.bounds.size.y), 0f, Vector2.down, 0.2f, layerGround);
+        return rayCast.collider != null;
+    }
     void ProcessJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canJump())
         {
             if (coyoteTimeCounter > 0f)
             {
