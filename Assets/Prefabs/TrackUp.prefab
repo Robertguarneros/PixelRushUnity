@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7044810729114617463}
   - component: {fileID: 4400673860004380298}
   - component: {fileID: 1548202862732882411}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TrackUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ EdgeCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

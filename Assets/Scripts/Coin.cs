@@ -19,7 +19,6 @@ public class Coin : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            //Destroy(this.gameObject);
             gameManager.IncreasePoints(value);
             particles.Play();
             spr.enabled = false;
