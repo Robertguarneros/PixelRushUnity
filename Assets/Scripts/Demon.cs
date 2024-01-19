@@ -16,7 +16,7 @@ public class Demon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rigidBody.velocity = new Vector2(1f , rigidBody.velocity.y);
+        rigidBody.velocity = new Vector2(velocity , rigidBody.velocity.y);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
