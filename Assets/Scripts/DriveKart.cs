@@ -14,6 +14,7 @@ public class DriveKart : MonoBehaviour
 
     private float coyoteTime = 0.2f;
     private float coyoteTimeCounter;
+    bool CanMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -59,20 +60,24 @@ public class DriveKart : MonoBehaviour
 
     void ProcessMovement()
     {
+        if(!CanMove)
+        {
+            return;
+        }
         float inputMovement = Input.GetAxis("Horizontal");
         rigidBody.velocity = new Vector2(inputMovement * velocity, rigidBody.velocity.y);
     }
 
     bool IsGrounded()
     {
-        // Adjust the parameters based on your character's collider and the ground
-        return Physics2D.Raycast(transform.position, Vector3.down, 0.9f);
+        return Physics2D.Raycast(transform.position, Vector3.down, 0.2f);
     }
 
-    private void SlimeTouch()
+    public void SlimeTouch()
         {
-            Vector2 KickDirection
-            if (rigidBody.velocity.x >0)
+            CanMove = false;
+            Vector2 KickDirection;
+            if (rigidBody.velocity.x > 0)
             {
                 KickDirection = new Vector2(-1, 1);
             }
@@ -80,6 +85,17 @@ public class DriveKart : MonoBehaviour
             {
                 KickDirection = new Vector2(1, 1);
             }
-            rigidBody.AddForce (KickDirection, KickForce);
+            rigidBody.AddForce (KickDirection * KickForce);
+            StartCoroutine(ActiveMoviment());
+        }
+
+        IEnumerator ActiveMoviment()
+        {
+            yield return new WaitForSeconds(1f);
+            while(!IsGrounded())
+            {
+                yield return null;
+            }
+            CanMove = true;
         }
 }

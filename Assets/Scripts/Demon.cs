@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Demon : MonoBehaviour
 {
     public float velocity;
     private Rigidbody2D rigidBody;
     [SerializeField] Transform spawnPoint;
+    [SerializeField] private GameObject DeadMenu;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,8 @@ public class Demon : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.transform.position = spawnPoint.position;
+            Time.timeScale = 0f;
+            DeadMenu.SetActive(true);
         }
     }
 }
