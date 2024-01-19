@@ -8,10 +8,11 @@ public class Coin : MonoBehaviour
     public int value = 1;
     public GameManager gameManager;
     private ParticleSystem particles;
+    private SpriteRenderer spr;
     private void Awake()
     {
         particles = GetComponent<ParticleSystem>();
-
+        spr = GetComponent<SpriteRenderer>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -20,7 +21,8 @@ public class Coin : MonoBehaviour
         {
             gameManager.IncreasePoints(value);
             particles.Play();
-            //Destroy(this.gameObject);
+            spr.enabled = false;
+            
         }
     }
 }

@@ -6,6 +6,7 @@ public class DriveKart : MonoBehaviour
 {
     public float velocity;
     public float jumpingStrength;
+    public float KickForce;
     public LayerMask layerGround;
     private Rigidbody2D rigidBody;
     private BoxCollider2D boxCollider;
@@ -67,4 +68,18 @@ public class DriveKart : MonoBehaviour
         // Adjust the parameters based on your character's collider and the ground
         return Physics2D.Raycast(transform.position, Vector3.down, 0.9f);
     }
+
+    private void SlimeTouch()
+        {
+            Vector2 KickDirection
+            if (rigidBody.velocity.x >0)
+            {
+                KickDirection = new Vector2(-1, 1);
+            }
+            else
+            {
+                KickDirection = new Vector2(1, 1);
+            }
+            rigidBody.AddForce (KickDirection, KickForce);
+        }
 }
