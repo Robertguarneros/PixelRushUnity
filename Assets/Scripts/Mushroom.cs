@@ -2,25 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumpMashroom : MonoBehaviour
+public class Mushroom : MonoBehaviour
 {
     // Start is called before the first frame update
-    
-    public GameManager gameManager;
-    private ParticleSystem particles;
-    private void Awake()
+    void Start()
     {
-        particles = GetComponent<ParticleSystem>();
-
+        
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-
-            particles.Play();
-           
+            Destroy(this.gameObject);
         }
     }
 }

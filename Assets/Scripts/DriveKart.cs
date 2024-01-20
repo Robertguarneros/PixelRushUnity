@@ -15,6 +15,7 @@ public class DriveKart : MonoBehaviour
     private float coyoteTime = 0.2f;
     private float coyoteTimeCounter;
     bool CanMove = true;
+    bool superJump = false;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +55,10 @@ public class DriveKart : MonoBehaviour
             {
                 rigidBody.AddForce(Vector2.up * jumpingStrength, ForceMode2D.Impulse);
                 coyoteTimeCounter = 0f;
+            }
+            if (superJump)
+            {
+                superJump= false;
             }
         }
     }
@@ -98,4 +103,13 @@ public class DriveKart : MonoBehaviour
             }
             CanMove = true;
         }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Seta"))
+        {
+            superJump = true;
+            float x = 1.5f;
+            rigidBody.AddForce(Vector2.up *jumpingStrength*x, ForceMode2D.Impulse);
+        }
+    }
 }
