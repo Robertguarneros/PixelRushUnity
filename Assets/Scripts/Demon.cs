@@ -19,6 +19,7 @@ public class Demon : MonoBehaviour
     void Update()
     {
         rigidBody.velocity = new Vector2(velocity , rigidBody.velocity.y);
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -29,4 +30,5 @@ public class Demon : MonoBehaviour
             DeadMenu.SetActive(true);
         }
     }
+   
 }

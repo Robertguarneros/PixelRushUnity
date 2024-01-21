@@ -11,11 +11,13 @@ public class DriveKart : MonoBehaviour
     private Rigidbody2D rigidBody;
     private BoxCollider2D boxCollider;
     private CapsuleCollider2D capsuleCollider;
-
+    public AudioManager audioManager;
+    public AudioClip audioClip;
     private float coyoteTime = 0.2f;
     private float coyoteTimeCounter;
     bool CanMove = true;
     bool superJump = false;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +53,7 @@ public class DriveKart : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && canJump())
         {
+            audioManager.PlaySS(audioClip);
             if (coyoteTimeCounter > 0f)
             {
                 rigidBody.AddForce(Vector2.up * jumpingStrength, ForceMode2D.Impulse);
@@ -112,4 +115,10 @@ public class DriveKart : MonoBehaviour
             rigidBody.AddForce(Vector2.up *jumpingStrength*x, ForceMode2D.Impulse);
         }
     }
+    public void SetVelocity(float velocity)
+    {
+        this.velocity = velocity;
+    }
+
+
 }

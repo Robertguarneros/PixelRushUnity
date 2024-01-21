@@ -9,6 +9,8 @@ public class Coin : MonoBehaviour
     public GameManager gameManager;
     private ParticleSystem particles;
     private SpriteRenderer spr;
+    public AudioManager audioManager;
+    public AudioClip audioClip;
     private void Awake()
     {
         particles = GetComponent<ParticleSystem>();
@@ -19,6 +21,7 @@ public class Coin : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            audioManager.PlaySS(audioClip);
             gameManager.IncreasePoints(value);
             particles.Play();
             spr.enabled = false;

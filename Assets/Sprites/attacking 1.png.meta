@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 58d2694c296b8b2499447d7aa6e1c608
+guid: cc15ac0242144b04f84231bb4a9b4fcc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,19 +81,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -123,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slime_Medium_Green_0
+      name: attacking_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 107
-        width: 14
-        height: 11
+        x: 34
+        y: 217
+        width: 45
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23f79fdf4dc0dc7478e66d59951eb831
-      internalID: 1175186068
+      spriteID: b69931aec12cb8c46a42b29e7ac2a973
+      internalID: 70135706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime_Medium_Green_1
+      name: attacking_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 106
-        width: 14
-        height: 12
+        x: 130
+        y: 219
+        width: 31
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4e4fa84198693d45adbef91c73f4a6e
-      internalID: 1550672895
+      spriteID: 1e9393984f0d48c4cae283f7bc7392e4
+      internalID: -946217954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime_Medium_Green_2
+      name: attacking_2
       rect:
         serializedVersion: 2
-        x: 74
-        y: 105
-        width: 12
-        height: 13
+        x: 230
+        y: 216
+        width: 66
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38f047f9575f67b4ca405d9e0525ab8b
-      internalID: 1844515742
+      spriteID: c1d2da1b776dd864a818360bfebc09c1
+      internalID: -194988482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime_Medium_Green_3
+      name: attacking_3
       rect:
         serializedVersion: 2
-        x: 105
-        y: 106
-        width: 14
-        height: 12
+        x: 334
+        y: 217
+        width: 59
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9323fce3c3659664aa0a29ca7bbab2e2
-      internalID: -1123586348
+      spriteID: 6d9acfae7fa99ba43b3d0fe682ee651f
+      internalID: 1267931846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime_Medium_Green_4
+      name: attacking_4
       rect:
         serializedVersion: 2
-        x: 9
-        y: 75
-        width: 14
-        height: 11
+        x: 434
+        y: 217
+        width: 53
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac889511ed3f482489b8ef846dc224ad
-      internalID: 1617211186
+      spriteID: 7692dd068270d3e44b1fc450af3bbf27
+      internalID: -223361763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime_Medium_Green_5
+      name: attacking_5
       rect:
         serializedVersion: 2
-        x: 41
-        y: 75
-        width: 15
-        height: 11
+        x: 534
+        y: 217
+        width: 48
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 348717908821a9b409e9bd177e960165
-      internalID: 1778953584
+      spriteID: 89dac3f370a75b54faadf6465cecb650
+      internalID: 1063136041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime_Medium_Green_6
+      name: attacking_6
       rect:
         serializedVersion: 2
-        x: 72
-        y: 75
-        width: 17
-        height: 10
+        x: 34
+        y: 117
+        width: 39
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd32f838a14f86b4a9e24f40868326cf
-      internalID: 2062143676
+      spriteID: 729a42d0eec272443bc44d994cf66299
+      internalID: 33257726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime_Medium_Green_7
+      name: attacking_7
       rect:
         serializedVersion: 2
-        x: 104
-        y: 75
-        width: 16
-        height: 11
+        x: 134
+        y: 117
+        width: 30
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c8bf878de915f04fa29e2fcbb6ffbb2
-      internalID: 1790621734
+      spriteID: 20ac3c9b96a421a488b6dd6c73569aec
+      internalID: 1030437604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime_Medium_Green_8
+      name: attacking_8
       rect:
         serializedVersion: 2
-        x: 9
-        y: 43
-        width: 14
-        height: 11
+        x: 227
+        y: 117
+        width: 31
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9470f93c815710e4e9ab1fa2c49d928c
-      internalID: -1958572121
+      spriteID: 617ab0124eb8a6e48a192d3f6951f548
+      internalID: -687993404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime_Medium_Green_9
+      name: attacking_9
       rect:
         serializedVersion: 2
-        x: 41
-        y: 42
-        width: 14
-        height: 12
+        x: 318
+        y: 117
+        width: 76
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b891f4d4e5bcc134b92db53dd33105df
-      internalID: -1219347469
+      spriteID: 5b87d4e4bac7575468007a7c90811076
+      internalID: -1641388851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime_Medium_Green_10
+      name: attacking_10
       rect:
         serializedVersion: 2
-        x: 74
-        y: 41
-        width: 12
-        height: 13
+        x: 434
+        y: 117
+        width: 60
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de1f7dc98822d3f45bc38fb64a3a3d4b
-      internalID: 1920222844
+      spriteID: 615ec24aefd19b046ad1e17d6bae6e47
+      internalID: -719858248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime_Medium_Green_11
+      name: attacking_11
       rect:
         serializedVersion: 2
-        x: 105
-        y: 42
-        width: 14
-        height: 12
+        x: 534
+        y: 117
+        width: 59
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,20 +355,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7aa0f8864c7e6ee4487e633bae5f199e
-      internalID: 963800481
+      spriteID: 206e0efbc7d930347b55db86b592254a
+      internalID: -1802856162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime_Medium_Green_12
+      name: attacking_12
       rect:
         serializedVersion: 2
-        x: 9
-        y: 11
-        width: 14
-        height: 11
+        x: 34
+        y: 16
+        width: 48
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,71 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2104555e816c0cc458544552f3f87da1
-      internalID: 509771068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_Medium_Green_13
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 11
-        width: 15
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fefeeb1498ca7e74787b5f28e80b794c
-      internalID: -65180561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_Medium_Green_14
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 11
-        width: 17
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5111bf70c68c6bd42bba36e8d51590dd
-      internalID: -1105164494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_Medium_Green_15
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 11
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d44697340c43d364188153a6a4273eaf
-      internalID: 1906073806
+      spriteID: ce7b139d2b6e01e45a40e1d01134ef24
+      internalID: -1393905242
       vertices: []
       indices: 
       edges: []
@@ -469,22 +393,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Slime_Medium_Green_0: 1175186068
-      Slime_Medium_Green_1: 1550672895
-      Slime_Medium_Green_10: 1920222844
-      Slime_Medium_Green_11: 963800481
-      Slime_Medium_Green_12: 509771068
-      Slime_Medium_Green_13: -65180561
-      Slime_Medium_Green_14: -1105164494
-      Slime_Medium_Green_15: 1906073806
-      Slime_Medium_Green_2: 1844515742
-      Slime_Medium_Green_3: -1123586348
-      Slime_Medium_Green_4: 1617211186
-      Slime_Medium_Green_5: 1778953584
-      Slime_Medium_Green_6: 2062143676
-      Slime_Medium_Green_7: 1790621734
-      Slime_Medium_Green_8: -1958572121
-      Slime_Medium_Green_9: -1219347469
+      attacking_0: 70135706
+      attacking_1: -946217954
+      attacking_10: -719858248
+      attacking_11: -1802856162
+      attacking_12: -1393905242
+      attacking_2: -194988482
+      attacking_3: 1267931846
+      attacking_4: -223361763
+      attacking_5: 1063136041
+      attacking_6: 33257726
+      attacking_7: 1030437604
+      attacking_8: -687993404
+      attacking_9: -1641388851
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
